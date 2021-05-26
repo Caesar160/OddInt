@@ -1,0 +1,20 @@
+public class FindOdd {
+  public static int findIt(int[] a) {
+  int schetchik = 0;
+  int l = a.length;
+  System.out.println(a.length);
+    for (int i = 0; i<l; i++){
+      for (int k = 0; k<l; k++){
+        if (a[i]==a[k]){
+          schetchik++;
+        }
+      }
+      if (schetchik%2==1){
+        System.out.println(schetchik);
+        return a[i];
+      }
+      else schetchik = 0;
+    }
+    return 0;
+  }
+}
